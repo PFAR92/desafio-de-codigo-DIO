@@ -6,7 +6,8 @@ import java.util.Scanner;
 public class QuadradosPerfeitos {
     public static void main(String[] args) {
         
-        int n = new Scanner(System.in).nextInt();
+        Scanner teclado = new Scanner(System.in);
+        int n = teclado.nextInt();
         ArrayList<Double> quadradoPerf = new ArrayList<Double>();
 
         int a = 0; // menor numero de quadrados perfeitos.
@@ -48,7 +49,7 @@ public class QuadradosPerfeitos {
                 }
             }
 
-
+            teclado.close();
             System.out.println(a);
         }
     
